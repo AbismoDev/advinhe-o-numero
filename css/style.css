@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    background-color: #01030E;
+}
+
+header{
+    width: 100%;
+    background-color: #01030E;
+    text-align: center;
+    padding: 20px 2%;
+}
+
+section{
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    height: calc(100vh - 170px);
+}
+
+.container-app{
+    max-width: 250px;
+    width: 100%;
+    padding: 20px;
+    background-color: #000018;
+    box-shadow: 0 0 3px 1px #111177;
+    border-radius: 10px;
+}
+
+.titulo-app{
+    text-align: center;
+    color: white;
+}
+
+.resultado-app h3{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+}
+
+.entrada-numero-app{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.entrada-numero-app input[type=number]{
+    width: 80%;
+    height: 25px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.entrada-numero-app input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.entrada-numero-app input[type=number]:focus{
+    outline: none;
+}
+
+.informacoes-app{
+    margin-top: 20px;
+}
+
+.tentativas-app, .palpites-app{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.palpites-app{   
+    margin-top: 5px;
+}
+
+.tentativas-app p, .palpites-app p{
+    font-size: 14px;    
+    color: white;
+}
+
+.novo-jogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.novo-jogo input[type=button]{
+    width: 60%;
+    height: 35px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    background-color: #030329;
+    box-shadow: 0 0 3px 1px #3b3be0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.novo-jogo input[type=button]:hover{
+    opacity: .7;
+    transform: scale(0.96);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 2%;
+    background-color: #01030E;
+    text-align: center;
+}
+
+.link-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-rodape{
+    max-width: 200px;
+    width: 100%;
+}
+
+.nav-rodape ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-rodape ul li{
+    list-style: none;
+}
+
+.nav-rodape a, .creditos a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.nav-rodape a:hover, .creditos a:hover{
+    opacity: .7;
+}
+
+.creditos{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.creditos p{
+    color: white;
+}
