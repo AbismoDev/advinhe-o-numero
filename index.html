@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTES PERSONALIZADAS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Advinhe o Número</title>
+</head>
+<body onload="iniciarJogo()">
+    <div class="container">
+        <header>
+            <a href="https://www.abismodev.com" target="_blank">
+                <img class="logo" src="assets/logo.svg"
+                alt="Logo AbismoDev" title="AbismoDev">
+            </a>
+        </header>
+        <main>
+            <section>
+                <div class="container-app">
+                    <div class="titulo-app">
+                        <h1>Advinhe o Número</h1>
+                        <h2>1 - 100</h2>
+                    </div>
+                    <div class="resultado-app">
+                         <!--Retirar quando arrumar o script-->
+                    </div>
+                    <div class="entrada-numero-app">
+                        <input type="number" name="entrada-numero-app"
+                        id="entrada-numero" onchange="comparaNumero()"> <!---->
+                    </div>
+                    <div class="informacoes-app">
+                        <div class="tentativas-app">
+                            <p>Número de tentativas:</p>
+                            <p id="numero-tentativas">0</p> <!--Retirar quando arrumar o script-->
+                        </div>
+                        <div class="palpites-app">
+                            <p>Seus palpites:</p>
+                            <p id="palpites-tentativas"></p> <!--Retirar quando arrumar o script-->
+                        </div>
+                    </div>
+                    <div class="novo-jogo">
+                        <input type="button" value="NOVO JOGO" onclick="resetarJogo()">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="link-rodape">
+                    <nav class="nav-rodape">
+                        <ul>
+                            <li><a href="https://github.com/AbismoDev" target="_blank">Github</a></li>
+                            <li><a href="https://abismodev.com/" target="_blank">Portifólio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="creditos">
+                    <p>Site desenvolvido com <img class="icon-coracao" src="assets/icon-coracao.svg" alt="amor" title="Amor"> por <a href="https://www.instagram.com/welli.18" target="_blank">AbismoDev</a>.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
